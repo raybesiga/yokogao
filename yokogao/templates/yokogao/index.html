@@ -13,7 +13,7 @@
 
 <div class="columns">
   <div class="one-third column centered">
-    <img class="avatar" src="{{ data.avatar_url }}" width="300" height="300" style="border-radius: 50%;">
+    <img class="avatar" src="{{ avatar_url }}" width="300" height="300" style="border-radius: 50%;">
   </div>
   <div class="one-third column centered">
     <p><br></p>
@@ -22,34 +22,34 @@
         <nav class="menu">
             <a class="menu-item" href="#">
             <span class="octicon octicon-person"></span>
-            {{ data.name }}
+            {{ name }}
           </a>
           <a class="menu-item" href="#">
             <span class="octicon octicon-location"></span>
-            {{ data.location }}
+            {{ location }}
           </a>
           <a class="menu-item" href="#">
             <span class="octicon octicon-list-ordered"></span>
-            <span class="counter">{{ data.public_repos }}</span>
+            <span class="counter">{{ public_repos }}</span>
             Public Repos
           </a>
           <a class="menu-item" href="#">
             <span class="octicon octicon-bookmark" ></span>
-            <span class="counter">{{ data.followers }}</span>
+            <span class="counter">{{ followers }}</span>
             Followers
           </a>
           <a class="menu-item" href="#">
             <span class="octicon octicon-eye"></span>
-            <span class="counter">{{ data.following }}</span>
+            <span class="counter">{{ following }}</span>
             Following
           </a>
-         <!--  <a class="menu-item" href="#">
+          <a class="menu-item" href="#">
             <span class="octicon octicon-eye"></span>
-            Date Joined: {{ data.created_at }}
-          </a> -->
-          <a class="menu-item " href="{{ data.blog }}" target="_blank">
+            Date Joined: {{ created_at|timesince }}
+          </a>
+          <a class="menu-item " href="{{ blog }}" target="_blank">
             <span class="octicon octicon-globe"></span>
-            Website: {{ data.blog }}
+            Website: {{ blog }}
           </a>
         </nav>
     </div>
