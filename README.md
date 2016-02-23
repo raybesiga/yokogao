@@ -134,6 +134,8 @@ curl https://api.github.com/users/raybesiga
 ```
 For a simple Curl tutorial that uses the Github API, check [this one](https://gist.github.com/caspyin/2288960) out.
 
+> Please use your Github username wherever `raybesiga` is used
+
 Edit the ```yokogao/views.py``` file to look this way:
 
 ```
