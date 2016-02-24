@@ -133,6 +133,8 @@ PIPELINE = {
             'source_filenames': (
               'css/bower_components/primer-css/css/primer.css',
               'css/bower_components/octicons/octicons/octicons.css',
+              'css/grids-responsive-min.css',
+              'css/blog-layout.css',
             ),
             'output_filename': 'css/yokogao.css',
             'extra_context': {
