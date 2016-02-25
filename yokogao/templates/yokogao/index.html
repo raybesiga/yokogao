@@ -3,63 +3,45 @@
 {% block title %} Github Yokogao {% endblock %}
 
 {% block content %}
-<div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-          
-            <!-- A wrapper for all the blog posts -->
-            <div class="posts">
-                <h1 class="content-subhead">Basic Django App with the Github API</h1>
-
-                <!-- A single blog post -->
-                <section class="post">
-                    <header class="post-header">
-                        
-
-                        <h2 class="post-title">Basic Django app with the Github API</h2>
-
-                    </header>
-
-                    <div class="post-description">
-                        <img class="avatar" src="{{ avatar_url }}" width="300" height="300" style="border-radius: 50%;margin-bottom: 15px;margin-top: 15px;">
-                        
-                        <nav class="menu">
-                          <a class="menu-item" href="#">
-                          <span class="octicon octicon-person"></span>
-                          {{ name }}
-                        </a>
-                        <a class="menu-item" href="#">
-                          <span class="octicon octicon-location"></span>
-                          {{ location }}
-                        </a>
-                        <a class="menu-item" href="#">
-                          <span class="octicon octicon-list-ordered"></span>
-                          <span class="counter">{{ public_repos }}</span>
-                          Public Repos
-                        </a>
-                        <a class="menu-item" href="#">
-                          <span class="octicon octicon-bookmark" ></span>
-                          <span class="counter">{{ followers }}</span>
-                          Followers
-                        </a>
-                        <a class="menu-item" href="#">
-                          <span class="octicon octicon-eye"></span>
-                          <span class="counter">{{ following }}</span>
-                          Following
-                        </a>
-                        <a class="menu-item" href="#">
-                          <span class="octicon octicon-calendar"></span>
-                          Member for {{ created_at|timesince }}
-                        </a>
-                        <a class="menu-item " href="{{ blog }}" target="_blank">
-                          <span class="octicon octicon-globe"></span>
-                          Website: {{ blog }}
-                        </a>
-                      </nav>
-                    </div>
-
-                    <h4>Built with <span class="octicon octicon-heart" ></span> using the Github API and Primer</h4>
-                </section>
-            </div>        
-        </div>
-    </div>
+<div>
+    <header class="post-header">
+      <h2 class="post-title">Basic Django app with the Github API</h2>
+    </header>
+       <img class="avatar" src="{{ avatar_url }}" width="300" height="300" style="border-radius: 50%;margin-bottom: 15px;margin-top: 15px;">
+          <nav class="menu">
+            <a class="menu-item" href="#">
+            <span class="octicon octicon-person"></span>
+            {{ name }}
+          </a>
+          <a class="menu-item" href="#">
+            <span class="octicon octicon-location"></span>
+            {{ location }}
+          </a>
+          <a class="menu-item" href="#">
+            <span class="octicon octicon-list-ordered"></span>
+            <span class="counter">{{ public_repos }}</span>
+            Public Repos
+          </a>
+          <a class="menu-item" href="#">
+            <span class="octicon octicon-bookmark" ></span>
+            <span class="counter">{{ followers }}</span>
+            Followers
+          </a>
+          <a class="menu-item" href="#">
+            <span class="octicon octicon-eye"></span>
+            <span class="counter">{{ following }}</span>
+            Following
+          </a>
+          <a class="menu-item" href="#">
+            <span class="octicon octicon-calendar"></span>
+            Member for {{ created_at|timesince }}
+          </a>
+          <a class="menu-item " href="{{ blog }}" target="_blank">
+            <span class="octicon octicon-globe"></span>
+            Website: {{ blog }}
+          </a>
+        </nav>
+      <h4>Built with <span class="octicon octicon-heart" ></span> using the Github API and Primer</h4>
+  </section>
+</div>      
 {% endblock %}
