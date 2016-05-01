@@ -25,7 +25,7 @@ SECRET_KEY = 'lj*_vt&a^vjg5ma%ptdq2)#kgc92p%ts+bzjnm1pn-ukf^kno&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 GITHUB_USER = ''
 
