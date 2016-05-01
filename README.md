@@ -433,7 +433,14 @@ Then edit the `index.html` file
 
 Now if you run your server, you should have the browser showing your yokogao on the index page.
 
+## Create a local settings file
 
+The project has been updated a couple of times, make sure to add the following to your local settings
+
+```
+GITHUB_USER = 'your_github_username'
+DEBUG = True
+```
 
 
 
