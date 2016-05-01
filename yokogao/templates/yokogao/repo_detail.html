@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Repository {{ repo.name }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ repo.name }}</h1>
+    <p>{{ repo.description }}</p>
+    <ul><strong>Languages</strong>:
+        {% for lang in languages %}
+            <li class="nav-item">{{ lang }}</li>
+        {% endfor %}
+    </ul>
+    <p><strong>Last push</strong>: {{repo.pushed_at }}</p>
+
+    {% if issues %}
+        <h2>Issues</h2>
+        <ul>
+        {% for issue in issues %}
+            <li><a href="{{ issue.html_url }}">{{ issue.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock content %}
