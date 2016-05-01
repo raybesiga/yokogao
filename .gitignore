@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.sqlite3
 
 # C extensions
 *.so
@@ -52,6 +53,7 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
+static/*
 
 # Flask instance folder
 instance/

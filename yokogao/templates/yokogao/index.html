@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %} Github Yokogao {% endblock %}
+{% block title %}
+    {{ name }} on Github
+{% endblock title %}
 
 {% block content %}
 <div>
@@ -9,33 +11,34 @@
     </header>
        <img class="avatar" src="{{ avatar_url }}" width="300" height="300" style="border-radius: 50%;margin-bottom: 15px;margin-top: 15px;">
           <nav class="menu">
-            <a class="menu-item" href="#">
+            <span class="menu-item">
             <span class="octicon octicon-person"></span>
-            {{ name }}
-          </a>
-          <a class="menu-item" href="#">
+            <span>{{ name }}</span>
+          </span>
+          <span class="menu-item">
             <span class="octicon octicon-location"></span>
-            {{ location }}
-          </a>
-          <a class="menu-item" href="#">
+            <span>{{ location }}</span>
+
+          </span>
+          <a class="menu-item" href="/repos">
             <span class="octicon octicon-list-ordered"></span>
             <span class="counter">{{ public_repos }}</span>
             Public Repos
           </a>
-          <a class="menu-item" href="#">
+          <a class="menu-item" href="/followers">
             <span class="octicon octicon-bookmark" ></span>
             <span class="counter">{{ followers }}</span>
             Followers
           </a>
-          <a class="menu-item" href="#">
+          <a class="menu-item" href="/following">
             <span class="octicon octicon-eye"></span>
             <span class="counter">{{ following }}</span>
             Following
           </a>
-          <a class="menu-item" href="#">
+          <span class="menu-item">
             <span class="octicon octicon-calendar"></span>
-            Member for {{ created_at|timesince }}
-          </a>
+            Member for <span>{{ created_at|timesince }}</span>
+          </span>
           <a class="menu-item " href="{{ blog }}" target="_blank">
             <span class="octicon octicon-globe"></span>
             Website: {{ blog }}
@@ -43,5 +46,5 @@
         </nav>
       <h4>Built with <span class="octicon octicon-heart" ></span> using the Github API and Primer</h4>
   </section>
-</div>      
-{% endblock %}
+</div>
+{% endblock content %}
